@@ -1,0 +1,272 @@
+.dashboard {
+     width: 100%;
+     .header {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-column-gap: 24px;
+          .box {
+               background-color: $white;
+               display: flex;
+               align-items: center;
+               height: 76px;
+               .left {
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .icon {
+                         width: 20px;
+                         height: 20px;
+                         color: $white;
+                    }
+               }
+               .right {
+                    width: 64px;
+                    height: 44px;
+                    span {
+                         font-size: 16px;
+                         color: $gray2;
+                    }
+                    .bold-text {
+                         color: $black;
+                    }
+               }
+
+               .gradient-1 {
+                    background: linear-gradient(225deg, #159671 0%, #27dca8 100%);
+               }
+               .gradient-2 {
+                    background: linear-gradient(315deg, #ff6633 0%, #ffaf95 100%);
+               }
+               .gradient-3 {
+                    background: linear-gradient(135deg, #ff818e 0%, #ffb6bd 0.01%, #ff364c 100%);
+               }
+               .gradient-4 {
+                    background: linear-gradient(135deg, #8daaff 0%, #1752ff 100%);
+               }
+          }
+     }
+     .main {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          .chart-container {
+               width: calc(75% - 8px);
+               // display: grid;
+               // grid-template-columns: 100%;
+               // grid-template-rows: 2;
+               .drop_status {
+                    cursor: pointer;
+                    width: 50%;
+                    padding: 2px 4px;
+                    border: 1px solid $gray5;
+                    transition: all 0.3s ease, background 0s;
+                    border-radius: 4px;
+               }
+               .chart {
+                    height: 370px;
+                    background-color: $white;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: end;
+                    padding-bottom: 16px;
+                    padding-right: 16px;
+                    .tick-y,
+                    .tick-x {
+                         font-weight: 500;
+                         opacity: 0.8;
+                         font-family: "Inter", sans-serif;
+                         color: $gray4;
+                         font-size: 12px;
+                         line-height: 16px;
+                    }
+                    .chart-header {
+                         width: 100%;
+                         height: 50px;
+                         display: flex;
+                         justify-content: space-between;
+                         padding-left: 16px;
+                         .left {
+                              width: 24%;
+
+                              .semi-bold-16 {
+                                   color: $black;
+                              }
+                              .regular-14 {
+                                   color: $gray4;
+                              }
+                         }
+                         .right {
+                              display: flex;
+                              width: 240px;
+                              justify-content: space-between;
+                              padding-right: 10px;
+                              .box-1 {
+                                   .circule {
+                                        width: 8px;
+                                        height: 8px;
+                                        display: inline-block;
+                                        border-radius: 50%;
+                                        background-color: $orange;
+                                   }
+                                   .circule-2 {
+                                        width: 8px;
+                                        height: 8px;
+                                        display: inline-block;
+                                        border-radius: 50%;
+                                        background-color: $primary;
+                                   }
+                                   .medium-12 {
+                                        color: $gray4;
+                                   }
+                                   .medium-16 {
+                                        color: $black;
+                                   }
+                              }
+                         }
+                    }
+               }
+               .comment-block {
+                    overflow-y: hidden;
+                    max-height: 476px;
+                    background-color: $white;
+                    .comment-header {
+                         width: 100%;
+                         height: 56px;
+                         padding: 16px;
+                         border-bottom: 1px solid $border;
+                         color: $black;
+                    }
+                    .comment-item {
+                         width: 100%;
+                         height: 84px;
+                         border-bottom: 1px solid $border;
+                         display: grid;
+                         grid-template-columns:52px 1fr 138px;
+                         align-items: center;
+                         padding: 0 16px !important;
+                         img{
+                              width: 52px;
+                              height: 52px;
+                              border-radius: 4px;
+                         }
+                         .left {
+                              width: 95%;
+                              white-space: nowrap;
+                              text-overflow: ellipsis !important;
+                              overflow: hidden;
+                              .header-text {
+                                   margin: 6px 16px;
+                                   color: $black;
+                                   width: 95%;
+                                   white-space: nowrap;
+                                   text-overflow: ellipsis !important;
+                                   overflow: hidden;
+                              }
+                              .body-text {
+                                   margin: 6px 16px;
+                                   color: $gray2;
+                                   width: 96%;
+                                   white-space: nowrap;
+                                   text-overflow: ellipsis !important;
+                                   overflow: hidden;
+                              }
+                         }
+
+                         
+                         
+                    }
+               }
+          }
+
+          .card-wrapper {
+               width: calc(25% - 18px);
+               .card-chart {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    align-items: flex-end;
+                    height: 256px;
+                    background-color: $primary;
+                    padding-top: 16px;
+                    .card-header {
+                         width: 100%;
+                         height: 42px;
+                         display: flex;
+                         justify-content: space-between;
+                         padding: 0 16px;
+                         .semi-bold-16 {
+                              color: $white;
+                              margin: 0;
+                         }
+                         .text {
+                              color: white;
+                         }
+                    }
+               }
+               .card-two {
+                    max-height: 487px;
+                    overflow: hidden;
+                    background-color: $white;
+                    .card-header {
+                         width: 100%;
+                         height: 66px;
+                         border-bottom: 1px solid $border;
+                         padding-top: 16px;
+                         padding-left: 16px;
+                         padding-bottom: 8px;
+                         p {
+                              margin: 0;
+                         }
+                         .semi-bold-16 {
+                              color: $black;
+                         }
+                         .regular-12 {
+                              color: $gray3;
+                         }
+                    }
+                    .card-item {
+                         height: 60px;
+                         border-bottom: 1px solid $border;
+                         display: flex;
+                         align-items: center;
+                         justify-content: space-between;
+                         padding: 0 16px;
+                         p {
+                              margin: 0;
+                         }
+                         .medium-14 {
+                              color: $gray1;
+                         }
+                         .regular-12 {
+                              color: $gray3;
+                         }
+                         .medium-12 {
+                              color: $gray1;
+                         }
+                         .green {
+                              background-color: $lightPrimary;
+                              padding: 2px;
+                              border-radius: 3px;
+                              color: $primary;
+                         }
+                         .red {
+                              padding: 2px;
+                              border-radius: 3px;
+                              color: $red;
+                              background: #feeeee;
+                         }
+                    }
+               }
+          }
+     }
+}
+
+// .recharts-cartesian-axis-tick{
+//      text{
+//          height: auto !important; 
+//      }
+// }

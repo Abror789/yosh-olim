@@ -1,0 +1,196 @@
+.masterclass{
+  &-body{
+    background-color:$white;
+    padding: 16px 24px;
+    .top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      h6{
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 0;
+      }
+      .ant-btn{
+        border-radius: 2px!important;
+      }
+    }
+    .ant-table-wrapper{
+      .ant-table-content{
+        .ant-table-tbody{
+          .status{
+            display: flex;
+            align-items: center;
+            .color{
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              background-color:#52C41A;
+            }
+            .kutilmoqda{
+              background-color:#1890FF!important;
+            }
+            h6{
+              margin-bottom: 0;
+              font-family: "Inter", sans-serif;
+              font-weight: 400;
+              line-height: 22px;
+              font-size: 14px;
+              margin-left: 8px;
+            }
+          }
+          .action{
+            display: flex;
+            align-items: center;
+            .edit{
+              cursor: pointer;
+              background-color: #F6FFED;
+              color: #52C41A;
+              padding: 5px 11px;
+              border: 1px solid #B7EB8F;
+              border-radius: 2px;
+              svg{
+                width: 12.5px;
+                height: 12.5px;
+                margin-right: 6px;
+              }
+            }
+            .delete{
+              cursor: pointer;
+              background-color: #FFF1F0;
+              color: #F5222D;
+              padding: 5px 11px;
+              border: 1px solid #FFA39E;
+              border-radius: 2px;
+              margin-left: 8px;
+              svg{
+                width: 12.5px;
+                height: 12.5px;
+                margin-right: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+.actionMasterclass{
+  .title{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0;
+    color:#000;
+    span{
+      color:#1890FF;
+      cursor: pointer;
+    }
+  }
+  .main{
+    margin-top: 16px;
+    padding: 24px;
+    background-color:$white;
+    .form{
+      max-width: 60%;
+      margin:0 auto;
+      text-align: center;
+      .input-wrapper{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 24px;
+        label{
+          min-width: 132px!important;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+        }
+        input{
+          border: 1px solid #D9D9D9;
+          padding: 5px 12px;
+          height: 32px;
+          border-radius: 2px;
+        }
+      }
+      .date{
+        display: flex;
+        align-items: center;
+       margin-bottom: 24px;
+        p{
+          min-width: 132px!important;
+          margin-bottom: 0;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          font-family: "Inter", sans-serif;
+          margin-left: -8px;
+        }
+        .ant-picker{
+          width: 100%;
+          margin-left: 8px;
+        }
+      }
+      .upload-action{
+        max-width: 81%;
+        margin-left: auto;
+        .ant-upload{
+        }
+      }
+      .gallery {
+        width: 100%;
+        display: flex;
+        .img-item {
+          padding: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid rgba(220, 224, 223, 1);
+          position: relative;
+          margin-bottom: 16px;
+          margin-top: 8px;
+          margin-right: 16px;
+          img {
+            height: 54px;
+            object-fit: cover;
+          }
+          .close-img {
+            position: absolute;
+            top: -8px;
+            cursor: pointer;
+            right: -8px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid $primary;
+            background-color: $white;
+            .icon {
+              color: $primary;
+              width: 12px;
+              height: 12px;
+              transform: rotate(45deg);
+              font-weight: 700 !important;
+            }
+          }
+        }
+      }
+      .buttons{
+        display: flex;
+        max-width: 212px;
+        margin:24px auto 0;
+        .ant-btn-button{
+          border: 1px solid #D9D9D9!important;
+          color:#000;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

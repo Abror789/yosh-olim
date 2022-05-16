@@ -1,0 +1,32 @@
+.Toastify__toast-container--top-right {
+     top: 50px !important;
+}
+
+.Toastify__toast--success {
+     background-color: $green !important;
+     color: $white;
+}
+.Toastify__toast--warning {
+     background-color: $orange !important;
+}
+.Toastify__toast--error {
+     background-color: $red !important;
+}
+
+.Toastify__toast-icon {
+     svg {
+          fill: white;
+     }
+}
+
+.Toastify__close-button {
+     opacity: 1 !important;
+     color: white !important;
+     outline: none !important;
+}
+
+.my-alert {
+     display: flex;
+     align-items: center;
+     color: white;
+}

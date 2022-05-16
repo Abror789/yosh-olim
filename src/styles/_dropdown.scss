@@ -1,0 +1,89 @@
+.ant-dropdown {
+     &-menu {
+          padding: 4px;
+          border-radius: 4px;
+          box-shadow: 0px 1px 4px rgba(33, 33, 52, 0.1);
+          &-item {
+               font-family: Inter;
+               font-size: 14px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: 20px;
+               letter-spacing: 0px;
+               color: $gray2;
+               border-radius: 4px;
+               padding: 8px 16px;
+
+               &.red {
+                    color: $red;
+               }
+
+               &:hover {
+                    background-color: transparent;
+               }
+          }
+          &-title-content {
+               display: flex;
+               align-items: flex-start;
+               .icon {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 8px;
+               }
+          }
+     }
+}
+
+.dropdown-wrapper {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     .ant-btn {
+          min-width: 150px;
+          width: 100%;
+          color: $gray2 !important;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-color: #dce0df;
+          font-weight: 400;
+          &:hover,
+          &:focus {
+               color: $primary;
+               border-color: $primary;
+          }
+          .icon {
+               width: 16px;
+               height: 16px;
+               color: inherit;
+          }
+          &.placeholder {
+               color: $gray3 !important;
+          }
+     }
+     &-menu {
+          .ant-dropdown-menu-item {
+               transition: all 0.2s ease;
+               &:hover {
+                    color: $primary;
+               }
+          }
+     }
+     &.error {
+          .ant-btn {
+               color: $red !important;
+               &.placeholder {
+                    color: $red !important;
+               }
+               border-color: $red;
+          }
+     }
+     .error-text {
+          font-size: 12px;
+          font-family: 500;
+          position: absolute;
+          color: $red;
+          bottom: 0;
+          transform: translateY(100%);
+     }
+}

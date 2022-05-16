@@ -1,0 +1,96 @@
+.phone-input-wrapper {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     position: relative;
+     label {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          margin-bottom: 4px;
+          color: $black;
+     }
+     .PhoneInputCountry {
+          z-index: 1;
+     }
+     .PhoneInput {
+          border: none;
+          padding: 0 16px !important;
+          height: 44px;
+          position: relative;
+          input {
+               background-color: #fff !important;
+               border-radius: 4px;
+               position: absolute;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               padding-left: 56px;
+               border: 1px solid $gray5;
+               letter-spacing: 0;
+               line-height: 20px;
+               color: $black;
+               font-family: "Inter", sans-serif;
+               font-size: 14px;
+               font-style: normal;
+               line-height: 24px;
+               width: 100%;
+               transition: all 0.3s ease;
+               &::placeholder {
+                    color: $gray3;
+               }
+               &:focus {
+                    outline: none;
+               }
+               &:hover {
+                    border-color: $primary !important;
+               }
+               &:focus {
+                    border-color: $primary !important;
+                    box-shadow: 0 0 0 2px rgb($primary, 0.2) !important;
+               }
+          }
+     }
+     .PhoneInputCountryIcon--border {
+          box-shadow: none !important;
+          background-color: transparent !important;
+          img {
+               border-radius: 3px;
+          }
+     }
+     .PhoneInputCountrySelectArrow {
+          display: none;
+     }
+     .PhoneInputCountryIcon {
+          width: 28px;
+          height: 20px;
+          color: $black;
+     }
+     &.error {
+          label {
+               color: $red;
+          }
+          input {
+               border-color: $red !important;
+               color: $red;
+               &:hover {
+                    border-color: $red !important;
+               }
+               &:focus {
+                    border-color: $red !important;
+                    box-shadow: 0 0 0 2px rgb($red, 0.2) !important;
+               }
+          }
+          &::placeholder {
+               color: $red;
+          }
+     }
+     .error-text {
+          font-size: 12px;
+          font-family: 500;
+          position: absolute;
+          color: $red;
+          bottom: 0;
+          transform: translateY(100%);
+     }
+}

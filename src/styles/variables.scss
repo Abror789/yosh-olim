@@ -1,0 +1,261 @@
+//Main colors
+
+$primary: #2a81dd;
+$blue: #0086ff;
+$orange: #eac544;
+$red: #f54c51;
+$green: #159671;
+$lightGreen:#63bd39;
+$lightPrimary: #e8f2fe;
+$lightOrange: #fefcf6;
+$border: #f2f5f4;
+
+//Text colors
+
+$black: #0d1012;
+$gray1: #2d3331;
+$gray2: #505453;
+$gray3: #7b817f;
+$gray4: #b7bdbb;
+$gray5: #dce0df;
+$gray6: #f2f5f4;
+$gray7: #fafafa;
+$white: #ffffff;
+
+
+//$white:#fff;
+
+//$black: #121212;
+//$black2:#32324D;
+//$red: #eb5757;
+//$gray: #eaeaef;
+//$gray1: #333333;
+//$gray2:#373839;
+//$gray3:#6A6C6D;
+//$neutral: #666687;
+//$green: #00bc96;
+//$orange: #f2994a;
+
+.danger {
+     color: $red !important;
+}
+
+// Margin
+.mr-40 {
+     margin-right: 40px;
+}
+.ml-40 {
+     margin-left: 40px;
+}
+.mt-40 {
+     margin-top: 40px;
+}
+.mb-40 {
+     margin-bottom: 40px;
+}
+.mr-32 {
+     margin-right: 32px;
+}
+.ml-32 {
+     margin-left: 32px;
+}
+.mt-32 {
+     margin-top: 32px;
+}
+.mb-32 {
+     margin-bottom: 32px;
+}
+.mr-24 {
+     margin-right: 24px;
+}
+.ml-24 {
+     margin-left: 24px;
+}
+.mt-24 {
+     margin-top: 24px;
+}
+.mb-24 {
+     margin-bottom: 24px;
+}
+.mr-16 {
+     margin-right: 16px;
+}
+.ml-16 {
+     margin-left: 16px;
+}
+.mt-16 {
+     margin-top: 16px;
+}
+.mb-16 {
+     margin-bottom: 16px;
+}
+.mr-8 {
+     margin-right: 8px;
+}
+.ml-8 {
+     margin-left: 8px;
+}
+.mt-8 {
+     margin-top: 8px;
+}
+.mb-8 {
+     margin-bottom: 8px;
+}
+
+// Border radius
+.border-8 {
+     border-radius: 8px;
+}
+.border-4 {
+     border-radius: 4px;
+}
+
+// Text align
+.text-center {
+     text-align: center;
+}
+
+//Font Family
+.semi-bold-24 {
+     //styleName: Inter Semi Bold 24;
+     font-family: "Inter", sans-serif;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 32px;
+     letter-spacing: 0px;
+}
+
+.semi-bold-14 {
+     //styleName: Inter Semi Bold 14;
+     font-family: "Inter", sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 20px;
+     letter-spacing: 0px;
+}
+.semi-bold-12 {
+     //styleName: Inter Semi Bold 12;
+     font-family: "Inter", sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 24px;
+     letter-spacing: 0;
+}
+
+.medium-20 {
+     //styleName: Inter Medium 20;
+     font-family: "Inter", sans-serif;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 32px;
+     letter-spacing: 0px;
+}
+
+.medium-14 {
+     //styleName: Inter Medium 14;
+     font-family: "Inter", sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 20px;
+     letter-spacing: 0px;
+}
+
+.bold-18 {
+     //styleName: Inter Bold 18;
+     font-family: "Inter", sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     letter-spacing: 0px;
+}
+.semi-bold-18 {
+     //styleName: Inter Semi Bold 18;
+     font-family: "Inter", sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 24px;
+     letter-spacing: 0px;
+     text-align: left;
+}
+
+.semi-bold-16 {
+     //styleName: Inter Semi Bold 16;
+     font-family: "Inter", sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 24px;
+     letter-spacing: 0px;
+}
+.medium-16 {
+     //styleName: Inter Medium 16;
+     font-family: "Inter", sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px;
+     letter-spacing: 0px;
+}
+.medium-12 {
+     //styleName: Inter Medium 12;
+     font-family: "Inter", sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 16px;
+     letter-spacing: 0px;
+}
+.medium-10 {
+     //styleName: Inter Medium 10;
+     font-family: "Inter", sans-serif;
+     font-size: 10px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 12px;
+     letter-spacing: 0px;
+}
+.regular-16 {
+     //styleName: Inter Regular 16;
+     font-family: "Inter", sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 24px;
+     letter-spacing: 0px;
+}
+
+.regular-14 {
+     //styleName: Inter Regular 14;
+     font-family: "Inter", sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 20px;
+     letter-spacing: 0px;
+}
+
+.regular-12 {
+     //styleName: Inter Regular 12;
+     font-family: "Inter", sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 16px;
+     letter-spacing: 0px;
+}
+.regular-10 {
+     //styleName: Inter Regular 10;
+     font-family: "Inter", sans-serif;
+     font-size: 10px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 12px;
+     letter-spacing: 0px;
+}

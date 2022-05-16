@@ -1,0 +1,79 @@
+.ant-layout-header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     z-index: 11;
+     height: 72px;
+     border-bottom: 1px solid $border;
+     .nav-title {
+          color: #252733;
+     }
+     .right{
+          display: flex;
+          align-items: center;
+          .notification{
+               margin-right: 30px;
+               position: relative;
+               .num{
+                    position: absolute;
+                    right: -27px;
+                    top: 7px;
+                    //padding: 0 8px 0 8px;
+                    width: 31px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    color: white;
+                    height: 20px;
+                    background-color:#FF4D4F;
+               }
+          }
+          .user {
+               display: flex;
+               align-items: center;
+               margin-right: 40px;
+               cursor: pointer;
+               &-name {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-left: 12px;
+                    span {
+                         display: inline-block;
+                         line-height: initial;
+                         &:first-child {
+                              font-weight: 500;
+                              margin-bottom: 4px;
+                         }
+                         &:last-child {
+                              position: relative;
+                              font-size: 12px;
+                         }
+                    }
+               }
+               &-img {
+                    border: 1px solid #dcdce4;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 50%;
+                    padding: 2px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    img {
+                         display: inherit;
+                         width: 40px;
+                         height: 40px;
+                         border-radius: 50%;
+                         object-fit: cover;
+                    }
+               }
+          }
+     }
+}
+
+.user-dropdown {
+     width: fit-content;
+     margin-left: auto;
+}

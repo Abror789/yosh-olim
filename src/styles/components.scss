@@ -1,0 +1,28 @@
+@import "./button";
+@import "./search-input";
+@import "./input";
+@import "./phone-input";
+@import "./dropdown";
+@import "./table";
+@import "./tasotify";
+@import "./select";
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.ant-image {
+  .ant-image-mask {
+    &:hover {
+      cursor: zoom-in;
+    }
+  }
+}
+
+.ant-result {
+  .ant-result-extra {
+    display: flex;
+    justify-content: center;
+  }
+}

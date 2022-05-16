@@ -1,0 +1,43 @@
+@import "./styles/variables.scss";
+@import "./styles/components.scss";
+@import "./Components/Loaders/loaders";
+@import "./App/Auth/auth";
+@import "./App/Navbar/navbar";
+@import "./App/Sidebar/sidebar";
+@import "./App/Pages/pages";
+@import "./App/Pages/Dashboard/dashboard";
+@import "./App/Pages/Masterclass/masterclass";
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: "Inter", sans-serif;
+     font-style: normal;
+     background-color: #f9fafb;
+     color: #0d1012;
+
+     &::-webkit-scrollbar {
+          width: 0;
+     }
+}
+
+.app {
+     position: relative;
+     height: 100vh;
+}
+
+
+.ant-layout-content {
+     margin: 0 !important;
+     background-color: #f9fafb !important;
+     overflow-y: auto;
+     scroll-behavior: smooth;
+     position: relative;
+}
+.site-layout .site-layout-background {
+     background: #fff;
+}
